@@ -21,7 +21,7 @@ export const loginUser = async (formData: loginUserType): Promise<any> => {
     }
 };
 
-// Logout a user
+
 export const logoutUser = async (): Promise<any> => {
     try {
         const response = await api.get('/user/logout');
@@ -31,7 +31,7 @@ export const logoutUser = async (): Promise<any> => {
     }
 };
 
-// Get current user details
+
 export const getCurrentUser = async (): Promise<any> => {
     try {
         const response = await api.get('/user/me', {
@@ -84,7 +84,7 @@ export const setPassword = async (formData: resetUserType): Promise<any> => {
     }
 };
 
-// fetch all posts 
+
 export const fetchPosts = async (dispatch: any): Promise<any> => {
     try {
         const response = await api.get('/post/all');
@@ -125,7 +125,6 @@ export const createPost = async (formData: FormData): Promise<any> => {
     }
 }
 
-// fetching single post 
 
 export const getPost = async (id: string = ""): Promise<any> => {
     try {

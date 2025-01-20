@@ -152,7 +152,7 @@ export const deletePost = TryCatch(async (req, res, next) => {
         return next(new ErrorHandler("Post not found", 404));
     }
 
-    // Check if the user is the author
+
     if (!post.author.equals(req.userId)) {
         return next(new ErrorHandler("You are not the author of this post", 403));
     }

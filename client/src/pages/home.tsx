@@ -17,12 +17,12 @@ function Home() {
     return (
         <div className="min-h-screen bg-gray-50">
             <div className=" mx-auto px-4 py-6 grid grid-cols-1 lg:grid-cols-4 gap-6">
-                {/* Left Sidebar */}
+
                 <aside className="lg:col-span-1 hidden lg:block">
                     <Sidebar />
                 </aside>
 
-                {/* Main Content */}
+
                 <main className="lg:col-span-2 col-span-1">
                     <div >
 
@@ -35,7 +35,7 @@ function Home() {
                     </div>
                 </main>
 
-                {/* Right Sidebar */}
+
                 <aside className="lg:col-span-1 col-span-1">
 
                     <CreatePost />

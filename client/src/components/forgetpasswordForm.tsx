@@ -4,8 +4,8 @@ import { useNavigate } from "react-router-dom";
 import { sendCode } from "../utilis/api";
 
 const ForgotPasswordForm = () => {
-    const [email, setEmail] = useState<string>(""); // Email state
-    const navigate = useNavigate(); // Navigation hook
+    const [email, setEmail] = useState<string>("");
+    const navigate = useNavigate();
 
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -40,8 +40,8 @@ const ForgotPasswordForm = () => {
                             id="email"
                             name="email"
                             type="email"
-                            value={email} // Bind value to state
-                            onChange={handleChange} // Update state on input change
+                            value={email}
+                            onChange={handleChange}
                             className="pl-10 block w-full rounded-lg border-gray-300 border p-2.5 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
                             placeholder="Enter your email"
                             required
